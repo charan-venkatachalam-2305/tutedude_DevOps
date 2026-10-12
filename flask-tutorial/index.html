@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <p>Hi, welcome to the Signup Page</p>
+    <p>Today is a {{ day }}</p>
+    <p>The Time is {{ t }}</p>
+
+    <div class="centred">
+
+        <form action='/submit' method="POST">
+            <label for="name">Name</label>
+
+            <!--In Backend i.e, signup_app.py, when we make a request, it fetches data from the NAME part in <input> -->
+
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+
+    p {
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(229, 255, 35);
+    }
+
+    .centred {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+    }
+</style>
+
+</html>

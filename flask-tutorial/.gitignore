@@ -1,0 +1,6 @@
+#Ignore MongoDB credentials
+atlas-credentials.env
+#Also ignore a conventional environment file
+.env
+#Ignore Python virtual environments
+venv/
